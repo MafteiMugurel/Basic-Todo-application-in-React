@@ -24,10 +24,10 @@ const Todo = ({ text, todo, todos, setTodos }) => {
         {text}
       </li>
       <button onClick={completeHandler} className="complete-btn">
-        &#x2705;
+        ✔️
       </button>
       <button onClick={deleteHandler} className="trash-btn">
-        🚮
+        🗑️
       </button>
     </div>
   );

@@ -4,10 +4,15 @@
   box-sizing: border-box;
 }
 body {
-  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
-  color: white;
-  font-family: "Poppins", sans-serif;
-  min-height: 100vh;
+  width: 100%;
+  height: 100vh;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(120deg, #a5ffd6 0%, #84dcc6 100%);
+  font-family: "DM Sans", sans-serif;
+  overflow: hidden;
 }
 header {
   font-size: 2rem;
@@ -15,27 +20,34 @@ header {
 
 header,
 form {
-  min-height: 20vh;
+  color: #254441;
+  min-height: 15vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 form input,
 form button {
   padding: 0.5rem;
   font-size: 2rem;
   border: none;
+  color: #254441;
   background: white;
 }
+input:focus-visible {
+  outline: unset;
+}
 form button {
-  color: #ff6f47;
-  background: #f7fffe;
+  padding: 0.5rem 1rem;
+  color: white;
+  background: #eca400;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 form button:hover {
-  background: #ff6f47;
-  color: white;
+  background: white;
+  color: #eca400;
 }
 .todo-container {
   display: flex;
@@ -52,7 +64,7 @@ form button:hover {
   margin: 0.5rem;
   background: white;
   font-size: 1.5rem;
-  color: black;
+  color: #254441;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -67,28 +79,26 @@ form button:hover {
 
 .trash-btn,
 .complete-btn {
-  background: #ff6f47;
+  background: #9e2b25;
   color: white;
   border: none;
   padding: 1rem;
   cursor: pointer;
   font-size: 1rem;
 }
+.complete-btn:hover {
+  background: #eca400;
+  color: #548c2f;
+}
+.trash-btn:hover {
+  background: #eca400;
+  color: #9e2b25;
+}
 .complete-btn {
-  background: rgb(11, 212, 162);
+  background: #548c2f;
 }
 .todo-item {
   padding: 0rem 0.5rem;
-}
-
-.fa-trash,
-.fa-check {
-  pointer-events: none;
-}
-
-.fall {
-  transform: translateY(10rem) rotateZ(20deg);
-  opacity: 0;
 }
 
 .completed {
@@ -102,7 +112,7 @@ select {
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  outline: 0;
+  outline: unset;
   box-shadow: none;
   border: 0 !important;
   background-image: none;
@@ -115,7 +125,7 @@ select {
   overflow: hidden;
 }
 select {
-  color: #ff6f47;
+  color: #eca400;
   font-family: "Poppins", sans-serif;
   cursor: pointer;
   width: 12rem;
@@ -127,13 +137,12 @@ select {
   top: 0;
   right: 0;
   padding: 1rem;
-  background: #ff6f47;
+  background: #eca400;
   cursor: pointer;
   pointer-events: none;
 }
 /* Transition */
-/*
+
 .select:hover::after {
   transform: scale(1.5);
 }
-*/

@@ -55,6 +55,7 @@ function App() {
       <header>
         <h1>Mugur Todo List</h1>
       </header>
+
       <Form
         inputText={inputText}
         todos={todos}
