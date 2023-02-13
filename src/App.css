@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   width: 100%;
   height: 100vh;
@@ -14,6 +15,7 @@ body {
   font-family: "DM Sans", sans-serif;
   overflow: hidden;
 }
+
 header {
   font-size: 2rem;
 }
@@ -35,9 +37,11 @@ form button {
   color: #254441;
   background: white;
 }
+
 input:focus-visible {
   outline: unset;
 }
+
 form button {
   padding: 0.5rem 1rem;
   color: white;
@@ -45,10 +49,12 @@ form button {
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
 form button:hover {
   background: white;
   color: #eca400;
 }
+
 .todo-container {
   display: flex;
   justify-content: center;
@@ -70,9 +76,11 @@ form button:hover {
   align-items: center;
   transition: all 1s ease;
 }
+
 .filter-todo {
   padding: 1rem;
 }
+
 .todo li {
   flex: 1;
 }
@@ -86,17 +94,21 @@ form button:hover {
   cursor: pointer;
   font-size: 1rem;
 }
+
 .complete-btn:hover {
   background: #eca400;
   color: #548c2f;
 }
+
 .trash-btn:hover {
   background: #eca400;
   color: #9e2b25;
 }
+
 .complete-btn {
   background: #548c2f;
 }
+
 .todo-item {
   padding: 0rem 0.5rem;
 }
@@ -124,12 +136,14 @@ select {
   position: relative;
   overflow: hidden;
 }
+
 select {
   color: #eca400;
   font-family: "Poppins", sans-serif;
   cursor: pointer;
   width: 12rem;
 }
+
 /* Arrow */
 .select::after {
   content: "\25BC";
@@ -141,6 +155,7 @@ select {
   cursor: pointer;
   pointer-events: none;
 }
+
 /* Transition */
 
 .select:hover::after {

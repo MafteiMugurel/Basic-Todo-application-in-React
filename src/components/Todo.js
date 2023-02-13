@@ -1,10 +1,10 @@
 import React from "react";
 
 const Todo = ({ text, todo, todos, setTodos }) => {
-  //events
   const deleteHandler = () => {
     setTodos(todos.filter((el) => el.id !== todo.id));
   };
+
   const completeHandler = () => {
     setTodos(
       todos.map((item) => {
@@ -18,6 +18,7 @@ const Todo = ({ text, todo, todos, setTodos }) => {
       })
     );
   };
+
   return (
     <div className="todo">
       <li className={`todo-item ${todo.completed ? "completed" : ""}`}>
